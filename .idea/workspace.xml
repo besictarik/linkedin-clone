@@ -5,49 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8dea90d6-344c-4f6a-b3d4-cab4a0f745f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/linkedin-clone.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/auth/callback/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(auth)/signin/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(dashboard)/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CommentFeed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CommentForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Post.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PostFeed.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PostForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/PostOptions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/UserInformation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Widget.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/google-logo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lingedin-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/actions/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/data/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/data/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/helpers/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/supabase/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/supabase/middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/supabase/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/types/my-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(auth)/signin/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/signin/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +92,7 @@
       <workItem from="1714438929284" duration="3368000" />
       <workItem from="1714480998389" duration="17978000" />
       <workItem from="1714502698396" duration="19793000" />
-      <workItem from="1714565888783" duration="2410000" />
+      <workItem from="1714565888783" duration="2899000" />
     </task>
     <servers />
   </component>
