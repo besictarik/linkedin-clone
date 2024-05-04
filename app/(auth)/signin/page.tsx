@@ -22,9 +22,9 @@ const SignIn = () => {
 
     return (
         <form action={signIn} className={"flex flex-col items-center gap-2.5"}>
-            <Image src={LinkedinLogoIcon} className={"w-9"} alt={"Logo"} />
+            <Image src={LinkedinLogoIcon} className={"w-9"} alt={"Logo"} priority />
             <Button type={"submit"} variant={"secondary"}>
-                <Image src={GoogleLogoIcon} width={26} alt={"Google Logo Icon"} />
+                <Image src={GoogleLogoIcon} width={26} alt={"Google Logo Icon"} priority />
                 Sign in with Google
             </Button>
         </form>

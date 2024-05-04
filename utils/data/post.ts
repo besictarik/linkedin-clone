@@ -12,7 +12,7 @@ export const getPosts = async (): Promise<{
     // Everyone can see all the posts
 
     // @ts-ignore - random unexplainable ts error
-    // It works when it's not beeing ordered by
+    // It works when it's not being ordered by
     const {
         data: posts,
         error: postsError,
