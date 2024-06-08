@@ -37,6 +37,7 @@ const Header = async () => {
                 width={"40"}
                 height={"40"}
                 alt={"Logo"}
+                priority
             />
             <div className={"flex-1"}>
                 <form
@@ -48,7 +49,7 @@ const Header = async () => {
                     <input
                         type='text'
                         placeholder={"Search..."}
-                        className={"flex-1 bg-transparent outline-none"}
+                        className={"w-full bg-transparent outline-none"}
                     />
                 </form>
             </div>
