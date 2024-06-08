@@ -13,13 +13,13 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { getUser } from "@/utils/data/user";
 
 const Header = async () => {
-    const supabase = createClient();
     const {
         data: { user },
         error,
-    } = await supabase.auth.getUser();
+    } = await getUser();
     const full_name = user?.user_metadata.full_name.split(" ");
 
     const signOut = async () => {

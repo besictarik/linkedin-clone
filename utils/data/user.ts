@@ -1,6 +1,13 @@
 import { createClient } from "@/utils/supabase/server";
 import { PostgrestError } from "@supabase/supabase-js";
 import { type UserStats } from "@/utils/types/my-types";
+import { unstable_cache } from "next/cache";
+import { cache } from "react";
+
+export const getUser = cache(() => {
+    const supabase = createClient();
+    return supabase.auth.getUser();
+});
 
 export const getUserStats = async (): Promise<{
     data?: UserStats;
@@ -10,7 +17,8 @@ export const getUserStats = async (): Promise<{
     const {
         data: { user },
         error: authError,
-    } = await supabase.auth.getUser();
+    } = await getUser();
+
     if (!user) return { error: "User not authenticated." };
 
     const { data, error } = await supabase

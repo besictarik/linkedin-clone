@@ -5,7 +5,6 @@ import { randomUUID } from "node:crypto";
 import { type Tables, type TablesInsert } from "@/utils/types/supabase-types";
 import { revalidatePath } from "next/cache";
 import { type PostgrestError } from "@supabase/supabase-js";
-import { revalidate } from "@/app/(dashboard)/page";
 
 export const createPost = async (formData: FormData) => {
     const supabase = createClient();
@@ -46,7 +45,6 @@ export const createPost = async (formData: FormData) => {
         .insert<TablesInsert<"posts">>({ text: text, image: data?.path });
 
     if (error) return error;
-    console.log("Revalidating");
     revalidatePath("/");
 };
 

@@ -4,15 +4,16 @@ import { createClient } from "@/utils/supabase/server";
 import PostFeed from "@/components/PostFeed";
 import { getPosts } from "@/utils/data/post";
 import Widget from "@/components/Widget";
+import { unstable_cache } from "next/cache";
+import { getUser } from "@/utils/data/user";
 
-export const revalidate = 0;
+// export const revalidate = 0;
 
 const Home = async () => {
-    const supabase = createClient();
     const {
         data: { user },
         error: authError,
-    } = await supabase.auth.getUser();
+    } = await getUser();
 
     const { data: posts, error } = await getPosts();
 
