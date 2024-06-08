@@ -23,10 +23,14 @@ const UserInformation = async ({ user }: { user: any }) => {
                 {user ? (
                     <AvatarImage
                         src={user.user_metadata.avatar_url}
+                        alt={`User Profile Picture`}
                         referrerPolicy={"no-referrer"}
                     />
                 ) : (
-                    <AvatarImage src={"https://avatars.githubusercontent.com/u/76400418?v=4"} />
+                    <AvatarImage
+                        src={"https://avatars.githubusercontent.com/u/76400418?v=4"}
+                        alt={"Profile Picture Placeholder"}
+                    />
                 )}
                 <AvatarFallback>
                     {full_name?.[0].charAt(0).toUpperCase()}

@@ -21,7 +21,11 @@ const Post = ({ post, user }: { post: PostType; user: any }) => {
             <div className={"flex space-x-2 p-4"}>
                 <div>
                     <Avatar>
-                        <AvatarImage src={post.profile.avatar_url} referrerPolicy={"no-referrer"} />
+                        <AvatarImage
+                            src={post.profile.avatar_url}
+                            alt={"User Profile Photo"}
+                            referrerPolicy={"no-referrer"}
+                        />
                         <AvatarFallback>
                             {profile_name[0].charAt(0)}
                             {profile_name[1]?.charAt(0)}

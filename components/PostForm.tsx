@@ -46,10 +46,15 @@ const PostForm = ({ user }: { user: any }) => {
                 <div className={"flex items-center space-x-2"}>
                     <Avatar>
                         {user ? (
-                            <AvatarImage src={user.user_metadata.avatar_url} />
+                            <AvatarImage
+                                src={user.user_metadata.avatar_url}
+                                alt={"User Profile Photo"}
+                                referrerPolicy={"no-referrer"}
+                            />
                         ) : (
                             <AvatarImage
                                 src={"https://avatars.githubusercontent.com/u/76400418?v=4"}
+                                alt={"Profile Photo Placeholder"}
                             />
                         )}
                         <AvatarFallback>{user?.email.charAt(0).toUpperCase()}</AvatarFallback>
