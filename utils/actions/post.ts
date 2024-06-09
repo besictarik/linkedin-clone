@@ -85,7 +85,8 @@ export const likePost = async (postId: string) => {
         .from("posts_likes")
         .insert<TablesInsert<"posts_likes">>({ post_id: postId });
 
-    return { error };
+    if (error) return { error };
+    revalidatePath("/");
 };
 
 export const unlikePost = async (postId: string) => {
@@ -104,7 +105,8 @@ export const unlikePost = async (postId: string) => {
         .eq("post_id", postId)
         .eq("profile_id", user.id);
 
-    return { error };
+    if (error) return { error };
+    revalidatePath("/");
 };
 
 export const createComment = async (postId: string, formData: FormData) => {
