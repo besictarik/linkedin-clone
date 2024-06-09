@@ -21,13 +21,12 @@ export const getPosts = (): Promise<{
         }: { data: Post[] | null; error: PostgrestError | null } = await supabase
             .from("posts")
             .select(
-                "id, text, image, created_at, profile:profiles(id, full_name, email, avatar_url), likes:posts_likes(profile_id), comments:comments(id, text, created_at, profile:profiles(id, full_name, email, avatar_url), likes:comments_likes(profile_id))"
+                "id, text, image, created_at, profile:profiles!posts_profile_id_fkey(id, full_name, email, avatar_url), likes:posts_likes(profile_id), comments:comments(id, text, created_at, profile:profiles(id, full_name, email, avatar_url), likes:comments_likes(profile_id))"
             )
             .order("created_at", { ascending: false })
             .order("created_at", { referencedTable: "comments", ascending: false });
 
         if (posts == null) return { error: postsError };
-        console.log("Called Posts Again");
 
         return { data: posts };
     }, ["posts"])();
