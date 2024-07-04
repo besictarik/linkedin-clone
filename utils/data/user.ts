@@ -23,7 +23,7 @@ export const getUserStats = async (): Promise<{
 
     const { data, error } = await supabase
         .from("profiles")
-        .select("comments(count), posts(count)")
+        .select("comments(count), posts!posts_profile_id_fkey(count)")
         .eq("id", user.id)
         .single();
 
